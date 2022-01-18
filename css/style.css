@@ -1,0 +1,330 @@
+:root {
+    --main-bg-color: #2874f0;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #f1f3f6;
+}
+
+header{
+    background-color: var(--main-bg-color);
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 89px;
+    padding: 0px 25px 0px 90px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 58px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    
+}
+
+nav ul li:hover{
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--main-bg-color);
+    color: #fff;
+    height: 10vh;
+}
+
+/* sarch box navbar */
+.search{
+display: flex;
+align-items: center;
+/* padding: 0px 10px; */
+}
+
+.search input{
+    /* width: 580px; */
+    width: 34vw;
+    height: 27px;
+    border-radius: 3px;
+   margin: 0px 7px 0px 30px;
+}
+
+.search a img{
+    margin-top: 1 px;
+    cursor: pointer;
+    width: 16px;
+    margin: 0px 50px 0px 0px;
+}
+
+/* *** login button nav******** */
+.search button{
+    width: 70px;
+    height: 25px;
+    background: #fff;
+    color: #2874f0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0px 20px 0px 0px;
+}
+
+.search button:hover{
+    font-weight: bolder;
+}
+
+/* ***** slider img ************** */
+.slider img{
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+
+}
+
+.slider{
+    /* margin:auto;
+    max-width: 80vw; */
+    display: flex;
+    justify-content: center
+
+}
+
+/* ******** main body part ********** */
+.container{
+    min-height: calc(100vh - 10vh - 58px);
+}
+
+/* Card  */
+
+.card{
+    /* background-color: aqua; */
+    max-width: 91vw;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding:5px;
+    margin-bottom: 20px;
+}
+
+.card h2{
+    margin: 10px 0px 2px 0px;
+    background: #fff;
+    padding:  10px;
+    /* border-radius: 3px; */
+    /* text-align: center; */
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 16vw;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+     margin-bottom: 30px;
+
+} 
+
+.line p{
+    line-height: 4.5px;
+}
+
+img{
+    border-radius: 3px;
+}
+
+/* cardsss div  */
+
+.cardss{
+    display: flex;
+    justify-content: center;
+    /* overflow: scroll; */
+    /* overflow-x: hidden; */
+}
+
+/* ./////// CSS image Hover effect /////// */
+
+.card .card-item img {
+
+	transition: .3s ease-in-out;
+}
+.card .card-item:hover img {
+
+	transform: scale(0.75);
+    cursor: pointer;
+    
+}
+
+
+
+
+/* *********************************** */
+/* *********************************** */
+/* ***********Media-Query*********** */
+/* *********************************** */
+/* *********************************** */
+
+/* Tablet & Small Laptop */
+
+@media (min-width:660px) and (max-width: 1272px){
+
+    .slider img{
+        width: 900px;
+        height: 400px;
+    }
+    
+    .slider{
+    display: flex;
+    justify-content: center
+    }
+
+    /* ***** navigation bar **** */
+
+    nav{
+        flex-direction: column;
+        
+    }
+
+    .logo{
+        justify-content: center;
+        margin: 18px 0px 0px 0px ;
+    }
+
+    .logo img{
+        width: 13vw;
+        padding: 0px 25px 0px 50px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .search{
+        justify-content: center;
+    }
+
+    .search input{
+        margin: 0px 10px 0px 80px;
+    }
+
+    .btn{
+         display: none;
+    }
+    
+    .cardss{
+        overflow: hidden;
+    }
+
+    .card-item {
+         flex-direction: column;
+        
+        flex-wrap: wrap;
+    }
+
+    .card-item img{
+        width: 100%;
+    }
+
+    .card-item div{
+        width: 100%;
+    }
+
+}
+
+
+/* ****** Mobile Phones S/M/L ****** */
+
+@media (max-width: 640px){
+
+
+    .slider img{
+        width: 300px;
+        height: 150px;
+    }
+    
+    .slider{
+    display: flex;
+    justify-content: center
+    }
+
+    /* ***** navigation bar **** */
+
+    nav{
+        flex-direction: column;
+        
+    }
+
+    .logo{
+        justify-content: center;
+        margin: 18px 0px 0px 0px ;
+    }
+
+    .logo img{
+        width: 28vw;
+        padding: 0px 40px 0px 50px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .search{
+        justify-content: center;
+    }
+
+    .search input{
+        margin: 0px 10px 0px 80px;
+    }
+
+    .btn{
+         display: none;
+    }
+
+    .card-item{
+        width: 100vw;
+    }
+
+    .card-item img{
+        MARGIN: 45PX 45PX;
+    }
+
+
+    .cardss{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        justify-content: center;
+    }
+
+
+
+}

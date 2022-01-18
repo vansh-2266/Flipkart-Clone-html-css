@@ -1,0 +1,15 @@
+.flex-text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.my-3{
+    margin: 5px 0px;
+}
+
